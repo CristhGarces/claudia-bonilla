@@ -6,20 +6,20 @@ function Hero() {
     <section className="min-h-screen bg-beige flex items-center relative overflow-hidden">
 
       {/* Marquee de fondo */}
-      <div className="absolute top-24 left-0 w-full overflow-hidden opacity-10 pointer-events-none whitespace-nowrap">
+      <div className="absolute top-32 left-0 w-full overflow-hidden opacity-10 pointer-events-none whitespace-nowrap">
         <motion.p
           className="text-military font-display inline-block"
           style={{ fontSize: 'clamp(2rem, 8vw, 8rem)' }}
           animate={{ x: [0, -2000] }}
-          transition={{ duration: 8, repeat: Infinity, ease: 'linear', repeatType: 'loop' }}
+          transition={{ duration: 3, repeat: Infinity, ease: 'linear', repeatType: 'loop' }}
         >
-          Claudia Bonilla — Diseño a medida — Claudia Bonilla — Diseño a medida 
-          Claudia Bonilla — Diseño a medida — Claudia Bonilla — Diseño a medida 
+          Claudia Bonilla — Diseño a medida — Claudia Bonilla — Diseño a medida —
+          Claudia Bonilla — Diseño a medida — Claudia Bonilla — Diseño a medida —
         </motion.p>
       </div>
 
       {/* Contenido principal */}
-      <div className="relative z-10 w-full mt-28 md:mt-32">
+      <div className="relative z-10 w-full">
 
         <motion.p
           className="text-military font-body text-xs tracking-[0.2em] uppercase mb-6"
