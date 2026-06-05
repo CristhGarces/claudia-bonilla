@@ -6,10 +6,10 @@ function Hero() {
     <section className="min-h-screen bg-beige flex items-center relative overflow-hidden">
 
       {/* Marquee de fondo */}
-      <div className="absolute top-20 md:top-24 left-0 w-full overflow-hidden opacity-10 pointer-events-none whitespace-nowrap">
+      <div className="absolute top-24 left-0 w-full overflow-hidden opacity-[0.07] pointer-events-none whitespace-nowrap">
         <motion.p
           className="text-military font-display inline-block"
-          style={{ fontSize: 'clamp(2rem, 8vw, 8rem)' }}
+          style={{ fontSize: 'clamp(1.5rem, 4vw, 5rem)' }}
           animate={{ x: [0, -2000] }}
           transition={{ duration: 10, repeat: Infinity, ease: 'linear', repeatType: 'loop' }}
         >
