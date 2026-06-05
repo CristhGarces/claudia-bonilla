@@ -5,8 +5,11 @@ function Hero() {
   return (
     <section className="min-h-screen bg-beige flex items-center relative overflow-hidden">
 
-      {/* Marquee de fondo */}
-      <div className="absolute top-24 left-0 w-full overflow-hidden opacity-[0.07] pointer-events-none whitespace-nowrap">
+      {/* Marquee de fondo - pegado al navbar */}
+      <div
+        className="absolute left-0 w-full overflow-hidden opacity-10 pointer-events-none whitespace-nowrap"
+        style={{ top: '96px' }}
+      >
         <motion.p
           className="text-military font-display inline-block"
           style={{ fontSize: 'clamp(1.5rem, 4vw, 5rem)' }}
